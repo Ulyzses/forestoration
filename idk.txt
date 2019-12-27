@@ -1,0 +1,15 @@
+// TEMPORARY CODE PLACEHOLDERS
+
+NAVBAR
+
+<div class="rectangle">
+  <div class="menu"> <!--shit doesnt link up HAHAHAHUHUHU-->
+    <a href="index.html"><h1 class="menu">Home</h1></a>
+    <a href="science.html"><h1 class="menu">Science Behind</h1></a>
+    <h1 class="menu"><a href="status.html">Status in the PH</a></h1>
+    <h1 class="menu"><a href="sdg.html">SDGs</a></h1>
+    <h1 class="menu"><a href="orgs.html">How to Help</a></h1>
+    <h1 class="menu"><a href="trivia.html">Tree-vias</a></h1>
+    <h1 class="menu"><a href="sources.html">Sources</a></h1>
+  </div>
+</div>

@@ -9,7 +9,8 @@
   <meta name="author" conent="Barcenas, Hermano, Mapa">
 
   <title>Forestoration</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/script.js" type="text/javascript" defer></script>
 
   <!-- jQuery v3.4.1 minified -->
   <script src="lib/jquery-3.4.1.min.js" type="text/javascript"></script>
@@ -22,13 +23,65 @@
   <script src="lib/bootstrap-4.3.1.min.js" type="text/javascript"></script>
 
   <!-- jQuery Mousewheel v3.1.13 minified -->
-  <script src="jquery.mousewheel-3.1.13.min.js" type="text/javascript"></script>
+  <script src="lib/jquery.mousewheel-3.1.13.min.js" type="text/javascript"></script>
 </head>
   
 <body>
-  <div id="container">
+  <header>
+    <script>$('header').load('html/navbar.html');</script>
+  </header>
+  <div class="scrolling-container">
+    <div class="static">
+      <img src="img/bg.png">
+    </div>
+    <div class="layer" data-speed="1">
+      <img src="img/F0.png" alt="moon">
+    </div>
+    <div class="layer" data-speed="2">
+      <img src="img/F1.png" alt="clouds">
+    </div>
+    <div class="layer" data-speed="5">
+      <img src="img/F23.png" alt="mountain with river">
+      <img src="img/F23 no river.png" alt="mountains">
+      <img src="img/F23 no river.png" alt="mountains">
+    </div>
+    <div class="layer" data-speed="10">
+      <img src="img/F45.png" alt="bg trees">
+      <img src="img/F45.png" alt="bg trees">
+      <img src="img/F45.png" alt="bg trees">
+    </div>
+    <div class="layer" data-speed="60">
+      <img src="img/F6.png" alt="fg trees">
+      <img src="img/Sporadic big bois.png" alt="fg trees">
+      <img src="img/Sporadic big bois.png" alt="fg trees">
+      <img src="img/Sporadic big bois.png" alt="fg trees">
+    </div>
+    <div class="layer content" data-speed="60">
+      <div class="contain contain-title" id="home">
+        <div class="item">
+          <h1 class="title">
+            <span class="hash">#</span><span class="FO">FO</span><span class="R">R</span>ESTORATION
+          </h1>
+          <h2 class="subheader">WE GROW AS ONE. PLANT TREES AS A NATION. UNITE TO DEFEAT DEFORESTATION.</h2>
+        </div>
+      </div>
+      <div class="contain placeholder-div" id="science">
+        Science Behind
+      </div>
+      <div class="contain placeholder-div" id="status">
+        Philippine Status
+      </div>
+      <div class="contain placeholder-div" id="sdg">
+        SDGs Involved
+      </div>
+      <div class="contain placeholder-div" id="help">
+        How to Help
+      </div>
+      <div class="contain placeholder-div" id="tree-vias">
+        Tree-vias
+      </div>
+    </div>
   </div>
-  <script src="script.js"></script>
 </body>
 
 </html>

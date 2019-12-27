@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Bitterbrush';
+  src: url("../fonts/Bitterbrush DEMO.otf");
+}
+
+@font-face {
+  font-family: 'CLBold';
+  src: url("../fonts/Champagne & Limousines Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Javata';
+  src: url("../fonts/JAVATA.ttf");
+}
+
+@font-face {
+  font-family: 'Permanent';
+  src: url("../fonts/PermanentMarker.ttf");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+  
+/*
+ *  FOR HEADER
+ */
+
+.navbar-nav a {
+  padding: 0.5rem 1rem !important;
+}
+
+header {
+  flex-grow: 0;
+}
+
+/*
+ *  FOR SIDESCROLLING PARALLAX
+ */
+  
+.scrolling-container {
+  position: relative;
+  flex-grow: 1;
+}
+  
+.static, .layer {
+  position: absolute;
+  display: flex;
+  height: 100%;
+}
+  
+.static > img {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+  
+.layer > img {
+  height: 100%;
+  width: auto;
+}
+  
+.contain {
+  height: 100%;
+  width: 100vw;
+  position: relative;
+}
+  
+.item {
+  position: absolute;
+}
+
+/*
+ *  TITLE
+ */
+
+.contain-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.title {
+  font-family: "Bitterbrush";
+  font-size: 10rem;
+  text-shadow: 8px 7px #272727;
+  color: #375B4A;
+  font-weight: normal;
+  
+}
+
+h2.subheader {
+  font-family: "Javata";
+  font-size: 23px;
+  color: #ffffff;
+  text-align: center;
+}
+
+span.hash {
+  font-family: "Permanent";
+  font-size: 10rem;
+  color: #EAEAEA;
+}
+
+span.FO {
+  color: #EAEAEA;
+}
+  
+span.R {
+  color: #638B79;
+}
+
+/*
+ *  OTHERS
+ */
+
+.placeholder-div {
+  background: #00000030;
+}
+
+#home {
+  background: linear-gradient(to right, transparent, 95%, #00000030);
+}
