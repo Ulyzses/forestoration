@@ -1,8 +1,4 @@
 var scroll = 0;
-var curr = scroll;
-var isScrolling = false;
-var previous = 0;
-var loop;
 var locs = [
   "home",
   "science",
@@ -14,47 +10,26 @@ var locs = [
 ]
 
 function parallax() {
-  isScrolling = true;
-
-  loop = setInterval(() => {
-    dist = Math.abs(curr - scroll);
-    speed = dist * 0.2;
-
-    if ( dist < 0.2 ) {
-      clearInterval(loop);
-      isScrolling = false;
-
-      $('.layer').each(function() {
-        $(this).css('transform', `translateX(${-scroll * $(this).data("speed")}px)`);
-        // $(this).css('left', -curr * $(this).data("speed"));
-      });
-      return;
-    }
-
-    console.log(speed);
-
-    curr += (scroll < curr) ? -speed : speed;
-
-    $('.layer').each(function() {
-      $(this).css('transform', `translateX(${-curr * $(this).data("speed")}px)`);
-      // $(this).css('left', -curr * $(this).data("speed"));
-    });
-
-  }, 10);
+  $('.layer').each(function() {
+    $(this).css('transform', `translateX(${-scroll * $(this).data("speed")}px)`);
+  });
 }
 
 $(document).ready(() => {
   $('.scrolling-container').mousewheel((e, dir) => {
-    if ( Math.abs(dir) > 1) dir = Math.sign(dir);
+    e.preventDefault();
 
+    if ( Math.abs(dir) > 1) dir = Math.sign(dir);
     if ( scroll - dir >= 0 ) scroll -= dir;
-    if ( !isScrolling ) parallax();
+
+    parallax();
 
   });
 
   $(document).on('click', 'a', function(e) {
     loc = $(this).data("loc");
     scroll = locs.indexOf(loc) * $(window).width() / 60;
+
     parallax();
 
   })

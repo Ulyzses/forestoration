@@ -52,21 +52,21 @@ header {
  *  FOR SIDESCROLLING PARALLAX
  */
 
-/* * {
-  transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: linear;
-} */
-  
+
 .scrolling-container {
   position: relative;
   flex-grow: 1;
+
 }
   
 .static, .layer {
   position: absolute;
   display: flex;
   height: 100%;
+  
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
   
 .static > img {
