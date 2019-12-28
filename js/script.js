@@ -9,7 +9,8 @@ var locs = [
   "status",
   "sdg",
   "help",
-  "tree-vias"
+  "tree-vias",
+  "about"
 ]
 
 function parallax() {
@@ -45,13 +46,6 @@ function parallax() {
 $(document).ready(() => {
   $('.scrolling-container').mousewheel((e, dir) => {
     if ( Math.abs(dir) > 1) dir = Math.sign(dir);
-
-    // if ( previous !== dir ) {
-    //   previous = dir;
-    //   isScrolling = false;
-    //   scroll = curr;
-    //   // clearInterval(loop);
-    // }
 
     if ( scroll - dir >= 0 ) scroll -= dir;
     if ( !isScrolling ) parallax();

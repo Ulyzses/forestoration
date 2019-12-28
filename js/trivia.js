@@ -20,6 +20,6 @@ var triv = [
   "A large oak tree can drop 10,000 acorns in one year."
 ]
 
-function randomFren(){
+function randomTrivia(){
   document.getElementById('paragraph').innerHTML = triv[Math.floor(Math.random()*19)];
 }

@@ -51,6 +51,12 @@ header {
 /*
  *  FOR SIDESCROLLING PARALLAX
  */
+
+/* * {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+} */
   
 .scrolling-container {
   position: relative;
@@ -98,15 +104,12 @@ h1.title {
   font-size: 10rem;
   text-shadow: 8px 7px #272727;
   color: #375B4A;
-  font-weight: normal;
-  
 }
 
 h2.subheader {
   font-family: "Javata";
   font-size: 23px;
   color: #ffffff;
-  text-align: center;
 }
 
 span.hash {
