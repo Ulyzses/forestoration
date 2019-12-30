@@ -1,31 +1,48 @@
 @font-face {
     font-family: 'Bitterbrush';
-    src: url("fonts/Bitterbrush DEMO.otf");
+    src: url("../fonts/Bitterbrush DEMO.otf");
 }
   
 @font-face {
     font-family: 'CLBold';
-    src: url("fonts/Champagne & Limousines Bold.ttf");
+    src: url("../fonts/Champagne & Limousines Bold.ttf");
 }
   
 @font-face {
     font-family: 'Javata';
-    src: url("fonts/JAVATA.ttf");
+    src: url("../fonts/JAVATA.ttf");
 }
   
 @font-face {
     font-family: 'Permanent';
-    src: url("fonts/PermanentMarker.ttf");
+    src: url("../fonts/PermanentMarker.ttf");
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
+div{
+  margin:0;
+  padding: 0;
+}
+
+/*
+ *  NAVBAR
+ */
+
+.navbar-nav a {
+  padding: 0.5rem 1rem !important;
+}
+
+/*
+ *  SCROLLING CONTAINER CLASSES
+ */
 
 .contain {
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     position: relative;
 }
   
@@ -33,28 +50,60 @@ body {
     position: absolute;
 }
 
-/* For the navbar (lines 41-55)
-- di siya fixed when lumilipat sa next div class="contain"
-- nasa "bottom layer" siya ng other text so as if nakapatong text sakanya which is dapat hindi 
-*/
+/*
+ *  GENERAL
+ */
+/* 
+.title {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
 
-.rectangle {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    height: 65px;
-    background-color: #272727;
-}
-  
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 25px;
-    padding-top: 5px;
+h1.title{
+  font-family: "Bitterbrush";
+  font-size: 10rem;
+  text-shadow: 8px 7px #272727;
+  color: #375B4A;
 }
 
-.row {
+h2.subheader {
+  font-family: "Javata";
+  font-size: 2rem;
+  color: #272727;
+}
+
+
+.full {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #142D25;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-yay {
+  background-image: url('../img/A5-cropped.png'), url('../img/errything.png');
+  background-size: cover, cover;
+  background-attachment: scroll, fixed;
+  background-position: bottom, center;
+}
+
+/*
+ *  FOR ORGS.HTML
+ */
+
+/* SAAN TO */
+
+/* .row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,7 +114,9 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-top: -20px;
-}
+} */
+
+/* END SAAN TO */
 
 .socmed {
     width: 1095px;
@@ -97,7 +148,7 @@ body {
     padding-right: 35px;
 }
 
-h1.title {
+/* h1.title {
     font-family: "Bitterbrush";
     font-size: 170px;
     width: 1144px;
@@ -107,13 +158,7 @@ h1.title {
     margin-left: 68px;
     margin-top: 228px;
     text-align: center;
-}
-
-h1.menu {
-    font-family: "Javata";
-    font-size: 20px;
-    color: #ffffff;
-}
+} */
 
 h1.science-header {
     font-family: "Bitterbrush";
@@ -138,15 +183,15 @@ h1.sources {
     text-align: center;
 }
 
-h2.subheader {
-    font-family: "Javata";
-    font-size: 30px;
-    width: 1000px;
-    color: #272727;
-    margin-left: 140px;
-    margin-top: 456px;
-    text-align: center;
-}
+/* h2.subheader {
+  font-family: "Javata";
+  font-size: 30px;
+  width: 1000px;
+  color: #272727;
+  margin-left: 140px;
+  margin-top: 456px;
+  text-align: center;
+} */
 
 h2.about, h2.socmed {
     font-family: "Bitterbrush";
@@ -172,8 +217,8 @@ h4.info-science, h4.info-sdg, h4.info-orgs, h4.info-socmed, h4.info-status {
 h4.info-science {
     font-size: 45px;
     width: 1100px;
-    margin-left: 90px;
-    margin-top: 403px;
+    /* margin-left: 90px; */
+    /* margin-top: 403px; */
 }
 
 h4.info-sdg {

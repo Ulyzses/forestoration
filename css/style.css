@@ -65,7 +65,7 @@ header {
   height: 100%;
   
   transition-property: transform;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
   
@@ -83,6 +83,10 @@ header {
   height: 100%;
   width: 100vw;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
   
 .item {
@@ -94,9 +98,6 @@ header {
  */
 
 .contain-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 h1.title {
@@ -106,11 +107,47 @@ h1.title {
   color: #375B4A;
 }
 
+h1.science, h1.status, h1.sdg, h1.help, h1.trivia, h1.about {
+  font-family: "Bitterbrush";
+  font-size: 6rem;
+  text-shadow: 4px 3px #272727;
+  color: #375B4A;
+  text-align:center;
+}
+
 h2.subheader {
   font-family: "Javata";
-  font-size: 23px;
+  font-size: 2rem;
   color: #ffffff;
 }
+
+h2.abt{
+  color:#C6E1BE;
+  margin-top:5px;
+  font-family:"Javata";
+}
+
+p.abt{
+  color:#C6E1BE;
+  text-align:justify;
+}
+
+p.sect-sub{
+  color:#C6E1BE;
+  width:90%;
+  font-size:1.5rem;
+  text-align:center;
+}
+
+
+/* p {
+  font-family: "Javata";
+  font-size: 2rem;
+  color: #eaeaea;
+  text-align:center;
+  margin-left:150px;
+  margin-right:150px;
+} */
 
 span.hash {
   font-family: "Permanent";
@@ -131,9 +168,67 @@ span.R {
  */
 
 .placeholder-div {
-  background: #00000030;
+  /* background: #00000030; */
 }
 
 #home {
-  background: linear-gradient(to right, transparent, 95%, #00000030);
+  /* background: linear-gradient(to right, transparent, 95%, #00000030); */
+}
+
+.dark-bg {
+  background: #00000070;
+}
+
+/**
+ *  TREE-VIAS
+ */
+
+.paragraph-contain {
+  min-height: 50%;
+  width: 70%;
+}
+
+#paragraph {
+  font-family: "Javata";
+  font-size: 2rem;
+  color: #eaeaea;
+  text-align: center;
+}
+
+/**
+ *  ARROWS
+ */
+
+/* Next & previous buttons */
+.slider {
+  cursor: pointer;
+  position: absolute;
+  /* top: 50%; */
+  width: 5rem;
+  /* margin-top: -22px; */
+  /* padding: 16px; */
+  color: white !important;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  /* border-radius: 0 3px 3px 0; */
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slider:disabled {
+  display: none;
+}
+
+.slider:hover {
+  background-color: rgba(0,0,0,0.8);
 }
