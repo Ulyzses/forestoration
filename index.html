@@ -28,7 +28,35 @@
   
 <body>
   <header>
-    <script>$('header').load('html/navbar.html');</script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-around align-items-center w-100 ml-4 mr-5">
+          <a class="navbar-brand mx-0" href="#" data-loc="home">#FORESTORATION</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-loc="science">Science Behind</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-loc="status">Philippine Status</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-loc="sdg">SDGs Involved</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-loc="help">How to Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-loc="tree-vias">Tree-vias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-loc="about">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <div class="scrolling-container">
     <!-- SCROLLING BACKGROUND -->
@@ -46,6 +74,11 @@
     <div class="layer" data-speed="2">
       <img src="img/F1.png" alt="clouds">
       <img src="img/F1.png" alt="clouds">
+    </div>
+
+    <!-- Mountains pt -1 -->
+    <div class="layer" data-speed="5">
+      <img src="img/F2.png" alt="mountain na ayos">
     </div>
 
     <!-- Mountains -->
@@ -81,19 +114,28 @@
         </div>
       </div>
       <div class="contain placeholder-div" id="science">
-        Science Behind
+        <h1 class="science">Science Behind the issue</h1>
+          <p>deforestation is defined as the wide cutting or clearcutting of a large area of trees. This causes large consequences to our environment as well as people living near forests as trees help lessen flash floods and excess carbon emissions in our atmosphere. </p>
+          <a href="html/science.html" class="btn btn-primary"> Learn more </a>
       </div>
       <div class="contain placeholder-div" id="status">
-        Philippine Status
+        <h1 class="status">Philippine Status</h2>
+          <p>Every year, the forest management bureau (FMB) under the department of environment and natural resources (DENR) releases the philippine forestry statistics which helps filipinos become more aware of the current status of our forests.</p>
+          <a href="html/status.html" class="btn btn-primary"> Learn more </a>
       </div>
       <div class="contain placeholder-div" id="sdg">
-        SDGs Involved
+        <h1 class="status">SDGs Involved</h1>
+          <p>the 2030 agenda for sustainable development is a blueprint adopted by all 2015 united nation member states which aims to improve peace and prosperity for the people and the planet. to further guide us towards this goal, the 17 sustainable development goals (SDGS) were made, each having its own specific goal and indicators.</p>
+          <a href="html/sdg.html" class="btn btn-primary"> Learn more </a>
       </div>
       <div class="contain placeholder-div" id="help">
-        How to Help
+        <h1 class="help">How to Help</h1>  
+          <p>as students, we can contribute to the prevention of deforestation by volunteering or giving donations to various organizations with the goal of protecting our forests. There exists multple organizations, both local and international, with different, yet effective activities on doing so.</p>
+          <a href="html/orgs.html" class="btn btn-primary"> Learn more </a>
       </div>
       <div class="contain placeholder-div" id="tree-vias">
-        Tree-vias
+        <h1 class="trivia">Tree-vias</h1>
+          <p> subtitle here uwu </p>
         <!-- Here -->
       </div>
       <div class="contain placeholder-div" id="about">

@@ -65,7 +65,7 @@ header {
   height: 100%;
   
   transition-property: transform;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
   
@@ -106,10 +106,28 @@ h1.title {
   color: #375B4A;
 }
 
+h1.science, h1.status, h1.sdg, h1.help, h1.trivia {
+  font-family: "Bitterbrush";
+  font-size: 6rem;
+  text-shadow: 4px 3px #272727;
+  color: #375B4A;
+  text-align:center;
+  margin-top:50px;
+}
+
 h2.subheader {
   font-family: "Javata";
-  font-size: 23px;
+  font-size: 2rem;
   color: #ffffff;
+}
+
+p {
+  font-family: "Javata";
+  font-size: 2rem;
+  color: #eaeaea;
+  text-align:center;
+  margin-left:150px;
+  margin-right:150px;
 }
 
 span.hash {
