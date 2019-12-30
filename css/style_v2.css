@@ -23,15 +23,14 @@ body {
   padding: 0;
 }
 
+div{
+  margin:0;
+  padding: 0;
+}
+
 /*
  *  NAVBAR
  */
-
-.navbar-nav.navbar-center {
-  /* position: absolute;
-  left: 50%;
-  transform: translatex(-50%); */
-}
 
 .navbar-nav a {
   padding: 0.5rem 1rem !important;
@@ -43,7 +42,7 @@ body {
 
 .contain {
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     position: relative;
 }
   
@@ -54,7 +53,7 @@ body {
 /*
  *  GENERAL
  */
-
+/* 
 .title {
   height: 100vh;
   width: 100vw;
@@ -62,31 +61,49 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.title h1 {
+h1.title{
   font-family: "Bitterbrush";
   font-size: 10rem;
   text-shadow: 8px 7px #272727;
   color: #375B4A;
 }
 
-.title h2 {
+h2.subheader {
   font-family: "Javata";
   font-size: 2rem;
   color: #272727;
 }
 
 
+.full {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #142D25;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-yay {
+  background-image: url('../img/A5-cropped.png'), url('../img/errything.png');
+  background-size: cover, cover;
+  background-attachment: scroll, fixed;
+  background-position: bottom, center;
+}
+
 /*
  *  FOR ORGS.HTML
  */
 
-
-
 /* SAAN TO */
 
-.row {
+/* .row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -97,7 +114,7 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-top: -20px;
-}
+} */
 
 /* END SAAN TO */
 
@@ -200,8 +217,8 @@ h4.info-science, h4.info-sdg, h4.info-orgs, h4.info-socmed, h4.info-status {
 h4.info-science {
     font-size: 45px;
     width: 1100px;
-    margin-left: 90px;
-    margin-top: 403px;
+    /* margin-left: 90px; */
+    /* margin-top: 403px; */
 }
 
 h4.info-sdg {

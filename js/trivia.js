@@ -1,3 +1,4 @@
+var curr = -1;
 var triv = [
   "Leaves appear green because chlorophyll absorbs red and blue light energy, causing the green energy to bounce off the leaf’s surface.",
   "In one day, one large tree can lift up to 100 gallons of water out of the ground and discharge it into the air.",
@@ -21,5 +22,12 @@ var triv = [
 ]
 
 function randomTrivia(){
-  document.getElementById('paragraph').innerHTML = triv[Math.floor(Math.random()*19)];
+  let rand = Math.floor(Math.random() * triv.length);
+
+  if ( rand == curr ) {
+    randomTrivia();
+  } else {
+    document.getElementById('paragraph').innerHTML = triv[rand];
+    curr = rand;
+  }
 }
