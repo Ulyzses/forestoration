@@ -17,7 +17,7 @@ function parallax() {
 
 $(document).ready(() => {
   $('.scrolling-container').mousewheel((e, dir) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     if ( Math.abs(dir) > 1) dir = Math.sign(dir);
     if ( scroll - dir >= 0 ) scroll -= dir;
