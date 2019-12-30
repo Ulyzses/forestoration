@@ -28,10 +28,68 @@
     p{
       color:#C6E1BE;
       font-family:"Javata";
-      font-size:30px;
+      font-size:1.5rem;
+      text-align:center;
+      width:60%;
+    }
+
+    p.intro{
+      width:60%;
+    }
+
+    div.help one{
       text-align:center;
     }
 
+    div.five{
+      margin-top:30px;
+    }
+    
+    .help {
+      width: 80%;
+    }
+
+    .help-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .org {
+      padding: 2rem;
+      margin: 2rem 0;
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+
+      background-color: #00000030;
+    }
+
+    .org img {
+      width: 20%;
+    }
+
+    .org-info {
+      margin-left: 2rem;
+      
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .org-info h2 {
+      text-align: left;
+    }
+
+    .org-info p {
+      width: auto;
+      text-align: justify;
+    }
+    
 
   </style>
 
@@ -45,32 +103,85 @@
   <div class="full bg-yay centered">
     <h1 class="title">How to Help</h1>
   </div>
-  <div class="full">
-    <p> Our abilities as the youth may seem limited at first, but don't underestimate our potential. Small actions can make great changes!
-    <div class="1 text-align-center">
+  <div class="full help-container">
+    <p class="intro"> Our abilities as the youth may seem limited at first, but don't underestimate our potential. Small actions can make great changes!
+    <div class="help one">
       <img src="../img/plant-tree.png">
       <h2> 1. Participate in TREE PLANTING programs </h2> 
         <p> Start from scratch. Promote regrowth.</p>
     </div>
-    <div class="2">
+    <div class="help two">
       <img src="../img/recycle-sign.png">
       <h2> 2. Make some CHANGES to your lifestyle </h2>
         <p> Reduce paper consumption, make use of reusable bags, or recycle when possible. </p>
     </div>
-    <div class="3">
+    <div class="help three">
       <img src="../img/idea.png">
       <h2> 3. Raise Social Awareness </h2>
         <p> Inform and educate. Use the power of technology and social media and spread the word! </p>
     </div>
-    <div class="4">
+    <div class="help four">
       <img src="../img/legal-paper.png">
       <h2> 4. Propose a law requiring grades 10 and 12 students to plant at least 10 trees before graduation </h2>
         <p> </p>
     </div>
-    <div class="5">
-      <img src="../img/team.png">
-      <h2> 5. Join Environmental Organizations </h2>
+    <div class="help five">
+      <h2> Join Environmental Organizations </h2>
         <p> There are tons out there with various advocacies. Research more and join forces! </p>
+
+        <div class="org">
+          <img src="../img/wwf.png">
+          <div class="org-info">
+            <h2>World Wildlife Fund</h2>
+            <p>The World Wide Fund for Nature is an international non-governmental organization founded in 1961, working in the field of wilderness preservation, and the reduction of human impact on the environment. It was formerly named the World Wildlife Fund, which remains its official name in Canada and the United States.</p>
+          </div>
+        </div>
+
+        <div class="org">
+          <img src="../img/for_fou.jpg">
+          <div class="org-info">
+            <h2>Forest Foundation Philippines</h2>
+            <p>Forest Foundation Philippines is a non-profit organization that provides grants to organizations that empower the people to protect the forests. Bonded by a mutual affinity for the protection of the country’s lush forests, the Forest Foundation Philippines was established in 2002 under two bilateral agreements between the governments of the United States of America and the Philippines through the US Tropical Forest Conservation Act (TFCA). </p>
+          </div>
+        </div>
+
+        <div class="org">
+          <img src="../img/con_int.png">
+          <div class="org-info">
+            <h2> Conservation International </h2>
+            <p> Conservation International is an American nonprofit environmental organization headquartered in Arlington, Virginia. Its goal is to protect nature as a source of food, fresh water, livelihoods and a stable climate. CI's work focuses on science, policy, and partnership with businesses and communities.
+            </p>
+          </div>
+        </div>
+
+        <div class="org">
+          <img src="../img/har_fou.png">
+          <div class="org-info">
+            <h2> Haribon Foundation</h2>
+            <p> The Haribon Foundation for the Conservation of Natural Resources, Inc., simply known as Haribon Foundation, is a nature conservation organization in the Philippines. The name "Haribon" is a reference to the Philippine eagle. The group was founded in 1972 as a bird-watching society.
+            </p>
+          </div>
+        </div>
+
+        <div class="org">
+          <img src="../img/rainfor.png">
+          <div class="org-info">
+            <h2> Rainforest Alliance</h2>
+            <p> The Rainforest Alliance is an international non-governmental organization based in New York City and Amsterdam, with offices throughout the world, it operates in more than 60 countries. It was founded in 1987 by Daniel Katz, who serves on its board of directors, and is currently led by CEO Han de Groot.
+            </p>
+          </div>
+        </div>
+
+        <div class="org">
+          <img src="../img/amazon.jpg">
+          <div class="org-info">
+            <h2> Amazon Watch</h2>
+            <p> Amazon Watch is a nonprofit organization founded in 1996, and based in Oakland, California, it works to protect the rainforest and advance the rights of indigenous peoples in the Amazon Basin.
+            </p>
+          </div>
+        </div>
+
+
     </div>
   </div>
 </body>

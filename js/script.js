@@ -9,58 +9,48 @@ var locs = [
   "about"
 ];
 
-var curr, dom;
-
 var width = $(window).width();
 var speed = $('.content').data('speed');
+
+var current = 0;
+var dom = 0;
 
 function plusSlides(n) {
   var left, right;
 
-left = Math.floor(current);
-right = Math.ceil(current);
+  dom = Math.round(current);
+  left = Math.floor(current);
+  right = Math.ceil(current);
+
+  console.log(dom, left, right);
 
   if ( left == right ) {
     // The user is exactly on the element
     scroll = (dom + n) * width / speed;
-    parallax();
+  } else if ( dom == left ) {
+    console.log('owo');
+    // The left side takes more of the screen
+    if ( n == 1 ) {
+      scroll = (dom + n) * width / speed;
+    } else if ( n == -1 ) {
+      scroll = dom * width / speed;
+    }
+  } else if ( dom == right ) {
+    console.log('uwu');
+    // The right side takes more of the screen
+    if ( n == 1 ) {
+      scroll = dom * width / speed;
+    } else if ( n == -1 ) {
+      scroll = (dom + n) * width / speed;
+    }
   }
 
-  // if ( n == 1 ) {
-  //   if ( left == right ) {
-  //     // The user is exactly on the element
-  //   } else if ( dom == left ) {
-  //     // The left is dominant
-  //   } else if ( dom == right ) {
-  //     // The right is more dominant
-  //   } else {
-  //     alert("Where the fuck are you");
-  //   }
-  // } else if ( n == -1 ) {
-  //   if ( left == right ) {
-  //     // The user is exactly on the element
-  //   } else if ( dom == left ) {
-  //     // The left is dominant
-  //   } else if ( dom == right ) {
-  //     // The right is more dominant
-  //   } else {
-  //     alert("Where the fuck are you");
-  //   }
-  // } else {
-  //   alert("Invalid input");
-  // }
-
-  // if ( left == right ) {
-  //   // The user is exactly on the element
-  //   if ( n == -1 ) {
-
-  //   }
-  // }
+  parallax();
 }
 
 function parallax() {
   $('.layer').each(function() {
-    $(this).css('transform', `translateX(${-scroll * $(this)data("speed")}px)`);
+    $(this).css('transform', `translateX(${-scroll * $(this).data("speed")}px)`);
   });
 
   current = scroll * speed / width;

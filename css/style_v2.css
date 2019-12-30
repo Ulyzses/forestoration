@@ -78,7 +78,7 @@ h2.subheader {
 
 
 .full {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0;
