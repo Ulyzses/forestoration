@@ -121,7 +121,7 @@ body {
   font-family: "Bitterbrush";
   font-size: 4rem;
   color: var(--body-color);
-  text-shadow: 3px 4px var(--text-shadow);
+  text-shadow: 5px 8px var(--text-shadow);
   
   width: 66%;
   text-align: left;
