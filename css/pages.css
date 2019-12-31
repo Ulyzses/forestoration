@@ -111,6 +111,7 @@ body {
   font-family: "Javata";
   font-size: 1.2rem;
   color: var(--body-color);
+  text-align: justify;
 }
 
 /**
@@ -145,6 +146,7 @@ body {
 
   width: 60%;
   text-align: justify;
+  margin-bottom: 0;
 }
 
 /**
@@ -165,4 +167,8 @@ body {
 
 .img-30 {
   width: 30%;
+}
+
+.img-60 {
+  width: 60%;
 }
