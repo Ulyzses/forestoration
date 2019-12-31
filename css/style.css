@@ -36,7 +36,7 @@ body {
   flex-direction: column;
 }
   
-/*
+/**
  *  FOR HEADER
  */
 
@@ -48,7 +48,7 @@ header {
   flex-grow: 0;
 }
 
-/*
+/**
  *  FOR SIDESCROLLING PARALLAX
  */
 
@@ -93,35 +93,40 @@ header {
   position: absolute;
 }
 
-/*
+/**
  *  TITLE
  */
 
-.contain-title {
-}
-
-h1.title {
+.title {
   font-family: "Bitterbrush";
   font-size: 10rem;
   text-shadow: 8px 7px #272727;
   color: #375B4A;
 }
 
-h1.science, h1.status, h1.sdg, h1.help, h1.trivia, h1.about {
-  font-family: "Bitterbrush";
-  font-size: 6rem;
-  text-shadow: 4px 3px #272727;
-  color: #375B4A;
-  text-align:center;
-}
-
-h2.subheader {
+.subheader {
   font-family: "Javata";
   font-size: 2rem;
   color: #ffffff;
 }
 
-h2.abt{
+
+span#hash {
+  font-family: "Permanent";
+  font-size: 10rem;
+  color: #EAEAEA;
+}
+
+span#FO {
+  color: #EAEAEA;
+}
+  
+span#R {
+  color: #638B79;
+}
+
+
+/* h2.abt{
   color:#C6E1BE;
   margin-top:5px;
   font-family:"Javata";
@@ -130,50 +135,73 @@ h2.abt{
 p.abt{
   color:#C6E1BE;
   text-align:justify;
+} */
+
+
+/**
+ *  SECTIONS
+ */
+
+ 
+.sect-title {
+  font-family: "Bitterbrush";
+  font-size: 6rem;
+  text-shadow: 4px 3px #272727;
+  color: #375B4A;
+  text-align:center;
+}
+
+.sect-title > a {
+  display: inline;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.8) 50%);
+  background-size: 200%;
+  background-position: -100% 0;
+
+  transition: 1s ease;
 }
 
 p.sect-sub{
   color:#C6E1BE;
-  width:90%;
+  width:60%;
   font-size:1.5rem;
   text-align:center;
+
 }
 
+.sect-sub > a {
+  display: inline;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.8) 50%);
+  background-size: 200%;
+  background-position: -100% 0;
 
-/* p {
-  font-family: "Javata";
-  font-size: 2rem;
-  color: #eaeaea;
-  text-align:center;
-  margin-left:150px;
-  margin-right:150px;
-} */
-
-span.hash {
-  font-family: "Permanent";
-  font-size: 10rem;
-  color: #EAEAEA;
+  transition: 1s ease;
 }
 
-span.FO {
-  color: #EAEAEA;
-}
-  
-span.R {
-  color: #638B79;
+.sect-sub > a:hover {
+  background-position: -100%;
 }
 
-/*
- *  OTHERS
+/**
+ *  BUTTONS
  */
 
-.placeholder-div {
-  /* background: #00000030; */
+.contain .more-btn {
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border: 3px solid #739d88;
+  color: #739d88;
+  font-weight: bolder;
+  margin: 2rem 0;
 }
 
-#home {
-  /* background: linear-gradient(to right, transparent, 95%, #00000030); */
+.more-btn:active,
+.more-btn:hover {
+  background-color: #739d88;
 }
+
+/**
+ *  OTHERS
+ */
 
 .dark-bg {
   background: #00000070;
@@ -203,15 +231,11 @@ span.R {
 .slider {
   cursor: pointer;
   position: absolute;
-  /* top: 50%; */
   width: 5rem;
-  /* margin-top: -22px; */
-  /* padding: 16px; */
   color: white !important;
   font-weight: bold;
   font-size: 2rem;
   transition: 0.6s ease;
-  /* border-radius: 0 3px 3px 0; */
   user-select: none;
   display: flex;
   align-items: center;
@@ -219,7 +243,6 @@ span.R {
   height: 100%;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;

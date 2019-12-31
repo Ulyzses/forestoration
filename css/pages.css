@@ -1,0 +1,168 @@
+:root {
+  --text-shadow: #272727;
+  --text-color: #375b4a;
+  --bg-color: #132c23;
+  --bg-shade: #00000030;
+  --body-color: #c6e1be;
+}
+
+@font-face {
+  font-family: 'Bitterbrush';
+  src: url("../fonts/Bitterbrush DEMO.otf");
+}
+
+@font-face {
+  font-family: 'Javata';
+  src: url("../fonts/JAVATA.ttf");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/**
+ *  VERTICAL PARALLAX ELEMENTS
+ */
+
+.landing {
+  height: 100%;
+  width: 100%;
+
+  background-image:
+    url('../img/A5-cropped.png'),
+    url('../img/errything.png');
+  background-size: cover, cover;
+  background-attachment: scroll, fixed;
+  background-position: bottom, center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing .page-title {
+  font-family: 'Bitterbrush';
+  font-size: 10rem;
+  
+  /* text-shadow: 8px 7px #272727; */
+  color: var(--body-color);
+  text-shadow: 8px 7px var(--text-shadow);
+
+  text-align: center;
+}
+
+.landing .page-subtitle {
+  font-family: 'Javata';
+  font-size: 2rem;
+  color: var(--text-shadow);
+}
+
+/**
+ *  BODY ELEMENTS
+ */
+
+.body-bg {
+  background-color: var(--bg-color);
+}
+
+.body-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0 0 5rem;
+}
+
+.body-flex > * {
+  margin-top: 2rem;
+}
+
+/**
+ *  CARDS
+ */
+
+.card-item {
+  width: 60%;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  background-color:var(--bg-shade);
+}
+
+.card-content {
+  margin-left: 2rem;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: "Bitterbrush";
+  font-size: 3rem;
+  color: var(--body-color);
+  text-shadow: 3px 4px var(--text-shadow);
+}
+
+.card-par {
+  font-family: "Javata";
+  font-size: 1.2rem;
+  color: var(--body-color);
+}
+
+/**
+ *  SECTIONS
+ */
+
+.section-title {
+  font-family: "Bitterbrush";
+  font-size: 4rem;
+  color: var(--body-color);
+  text-shadow: 3px 4px var(--text-shadow);
+  
+  width: 60%;
+  text-align: left;
+}
+
+.section-subtitle {
+  font-family: "Bitterbrush";
+  font-size: 1.5rem;
+  color: var(--body-color);
+
+  margin-top: -0.5rem;
+
+  width: 60%;
+  text-align: left;
+}
+
+.section-body {
+  font-family: "Javata";
+  font-size: 1.2rem;
+  color: var(--body-color);
+
+  width: 60%;
+  text-align: justify;
+}
+
+/**
+ *  TEST
+ */
+
+.animated-text {
+  width: 0%;
+}
+
+/**
+ *  UTILITIES
+ */
+
+.img-20 {
+  width: 20%;
+}
+
+.img-30 {
+  width: 30%;
+}
