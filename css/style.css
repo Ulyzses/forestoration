@@ -4,13 +4,8 @@
 }
 
 @font-face {
-  font-family: 'CLBold';
-  src: url("../fonts/Champagne & Limousines Bold.ttf");
-}
-
-@font-face {
   font-family: 'Javata';
-  src: url("../fonts/JAVATA.ttf");
+  src: url("../fonts/JAVATA.otf");
 }
 
 @font-face {
@@ -174,17 +169,17 @@ p.sect-sub{
  */
 
 .contain .more-btn {
-  background-color: transparent;
+  background-color: #739B8910;
   padding: 1rem 2rem;
-  border: 3px solid #739d88;
-  color: #739d88;
+  border: 3px solid #739B89;
+  color: #739B89;
   font-weight: bolder;
   margin: 2rem 0 0;
 }
 
 .more-btn:active,
 .more-btn:hover {
-  background-color: #739d88;
+  background-color: #739B89;
 }
 
 /**
@@ -215,7 +210,6 @@ p.sect-sub{
  *  ARROWS
  */
 
-/* Next & previous buttons */
 .slider {
   cursor: pointer;
   position: absolute;

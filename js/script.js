@@ -22,13 +22,10 @@ function plusSlides(n) {
   left = Math.floor(current);
   right = Math.ceil(current);
 
-  console.log(dom, left, right);
-
   if ( left == right ) {
     // The user is exactly on the element
     scroll = (dom + n) * width / speed;
   } else if ( dom == left ) {
-    console.log('owo');
     // The left side takes more of the screen
     if ( n == 1 ) {
       scroll = (dom + n) * width / speed;
@@ -36,7 +33,6 @@ function plusSlides(n) {
       scroll = dom * width / speed;
     }
   } else if ( dom == right ) {
-    console.log('uwu');
     // The right side takes more of the screen
     if ( n == 1 ) {
       scroll = dom * width / speed;
@@ -77,13 +73,6 @@ $(document).ready(() => {
 
     if ( Math.abs(dir) > 1) dir = Math.sign(dir);
     if ( scroll - dir >= 0 && scroll - dir <= (locs.length - 1) * width / speed) scroll -= dir;
-
-    parallax();
-  });
-
-  $('nav').on('click', 'a', function(e) {
-    loc = $(this).data("loc");
-    scroll = locs.indexOf(loc) * width / speed;
 
     parallax();
   });
