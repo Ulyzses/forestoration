@@ -46,7 +46,6 @@ body {
   font-family: 'Bitterbrush';
   font-size: 10rem;
   
-  /* text-shadow: 8px 7px #272727; */
   color: var(--body-color);
   text-shadow: 8px 7px var(--text-shadow);
 
@@ -73,7 +72,7 @@ body {
   align-items: center;
   justify-content: flex-start;
 
-  padding: 0 0 5rem;
+  padding: 5rem 0;
 }
 
 .body-flex > * {
@@ -85,7 +84,7 @@ body {
  */
 
 .card-item {
-  width: 60%;
+  width: 66%;
   padding: 2rem;
   display: flex;
   align-items: flex-start;
@@ -124,7 +123,7 @@ body {
   color: var(--body-color);
   text-shadow: 3px 4px var(--text-shadow);
   
-  width: 60%;
+  width: 66%;
   text-align: left;
 }
 
@@ -135,7 +134,7 @@ body {
 
   margin-top: -0.5rem;
 
-  width: 60%;
+  width: 66%;
   text-align: left;
 }
 
@@ -144,17 +143,107 @@ body {
   font-size: 1.2rem;
   color: var(--body-color);
 
-  width: 60%;
+  width: 66%;
   text-align: justify;
   margin-bottom: 0;
 }
 
 /**
- *  TEST
+ *  FLEXBOX
  */
 
-.animated-text {
-  width: 0%;
+.flexed-body {
+  width: 66%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.flexed-item > img {
+  margin-bottom: 1rem;
+}
+
+.flexed-item {
+  padding-bottom: 2rem;
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flexed-title {
+  font-family: "Bitterbrush";
+  font-size: 2rem;
+  color: var(--body-color);
+  text-shadow: 3px 4px var(--text-shadow);
+
+  text-align: center;
+}
+
+.flexed-par {
+  font-family: "Javata";
+  font-size: 1.2rem;
+  color: var(--body-color);
+
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/**
+ *  ONE-PAGE
+ */
+
+.body-light-bg {
+  background-color: var(--body-color);
+}
+
+.light-page-title {
+  margin: 0;
+
+  font-family: 'Bitterbrush';
+  font-size: 10rem;
+  
+  color: var(--text-color);
+  text-shadow: 8px 7px var(--text-shadow);
+
+  text-align: center;
+}
+
+#trivia-container {
+  margin-top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+  height: 60%;
+
+  background-color: var(--text-color);
+  box-shadow: 0 3px 8px var(--text-shadow);
+
+  position: relative;
+}
+
+#trivia-body {
+  font-family: 'Javata';
+  font-size: 1.25rem;
+  color: #eeffee;
+  text-align: center;
+  width: 80%;
+}
+
+#trivia-next {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: var(--body-color);
 }
 
 /**
@@ -165,10 +254,14 @@ body {
   width: 20%;
 }
 
+.img-25 {
+  width: 25%;
+}
+
 .img-30 {
   width: 30%;
 }
 
 .img-60 {
-  width: 60%;
+  width: 66%;
 }

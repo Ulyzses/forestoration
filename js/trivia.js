@@ -27,7 +27,7 @@ function randomTrivia(){
   if ( rand == curr ) {
     randomTrivia();
   } else {
-    document.getElementById('paragraph').innerHTML = triv[rand];
+    document.getElementById('trivia-body').innerHTML = triv[rand];
     curr = rand;
   }
 }

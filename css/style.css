@@ -125,19 +125,6 @@ span#R {
   color: #638B79;
 }
 
-
-/* h2.abt{
-  color:#C6E1BE;
-  margin-top:5px;
-  font-family:"Javata";
-}
-
-p.abt{
-  color:#C6E1BE;
-  text-align:justify;
-} */
-
-
 /**
  *  SECTIONS
  */
@@ -149,6 +136,7 @@ p.abt{
   text-shadow: 4px 3px #272727;
   color: #375B4A;
   text-align:center;
+  margin-top: 2rem;
 }
 
 .sect-title > a {
@@ -191,7 +179,7 @@ p.sect-sub{
   border: 3px solid #739d88;
   color: #739d88;
   font-weight: bolder;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
 }
 
 .more-btn:active,

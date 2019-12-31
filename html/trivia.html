@@ -16,9 +16,10 @@
   <!-- Bootstrap v4.3.1 minified -->
   <link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.3.1.min.css">
   <script src="../lib/bootstrap-4.3.1.min.js" type="text/javascript"></script>
-  
+
   <!-- Main -->
   <link rel="stylesheet" type="text/css" href="../css/pages.css">
+  <script src="../js/trivia.js"></script>
 </head>
 <body>
   <header>
@@ -52,35 +53,12 @@
       </div>
     </nav>
   </header>
-  <div class="landing">
-    <h1 class="page-title">About us</h1>
-  </div>
-  <div class="body-bg body-flex">
-    <div class="card-item">
-      <img src="../img/mors.jpg" alt="Mors" class="img-25">
-      <div class="card-content">
-        <h2 class="card-title">Marius Barcenas</h2>
-        <p class="card-par">Marius Ulyzses Barcenas is a senior high school student from the University of the Philippines Integrated School. He used to like coding.
-        </p>
-      </div>
-    </div><div class="card-item">
-      <img src="../img/jemi.jpg" alt="Jemi" class="img-25">
-      <div class="card-content">
-        <h2 class="card-title">Jammy Mapa</h2>
-        <p class="card-par">Julia Anne Alvarado Mapa is a Grade 11 student from UP Integrated School. Her hobbies include studying, swimming, baking, and watching netflix. Her personal advocacy is for quality education to become accessible for everyone as she believes education is the key to achieving one's dreams. As for her personal dream, she wishes to one day be a chemical engineer with a specialty in pharmaceuticals or become an astronaut.
-        </p>
-      </div>
-    </div>
-    <div class="card-item">
-      <img src="../img/jjoe.jpg" alt="Jjoe" class="img-25">
-      <div class="card-content">
-        <h2 class="card-title">Jhanjoe Hermano</h2>
-        <p class="card-par">Jhan Conrad Rebusquillo Hermano is a senior high school student currently studying at the University of the Philippines Integrated School. He spends most of his spare time watching television series, drawing, playing video games, and revamping his instagram feed every now and then. He is aspiring to pursue a career in medicine specifically in the field of neurology or psychiatry. Aside from forest preservation and restoration, he is also a firm advocate of access to healthcare, quality education, gender & racial equality, and social justice. Jhanjoe believes that with his skills and determination, he will be able to promote and create a community that will be comfortable, accessible, and inclusive to everyone in it.
-        </p>
-      </div>
+  <div class="body-light-bg body-flex h-100 justify-content-center align-content-center">
+    <h1 class="light-page-title">Tree-vias!</h1>
+    <div id="trivia-container">
+      <p id="trivia-body">Want to know more about forests and other mind-boggling facts and trivia? This fun trivia generator will surely provide information you wouldn't have known!</p>
+      <a id="trivia-next" href="#" onclick="randomTrivia()">Generate Random Fact &rarr;</a>
     </div>
   </div>
-  
-
 </body>
 </html>

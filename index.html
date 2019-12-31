@@ -10,7 +10,6 @@
   <title>Forestoration</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script src="js/script.js" type="text/javascript" defer></script>
-  <script src="js/trivia.js" type="text/javascript" defer></script>
 
   <!-- jQuery v3.4.1 minified -->
   <script src="lib/jquery-3.4.1.min.js" type="text/javascript"></script>
@@ -27,32 +26,33 @@
 </head>
   
 <body>
+  
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+    
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav justify-content-around align-items-center w-100 ml-4 mr-5">
-          <a class="navbar-brand mx-0" href="#" data-loc="home">#FORESTORATION</a>
+          <a class="navbar-brand mx-0" href="#" onclick="scroll=0; parallax();" data-loc="home">#FORESTORATION</a>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-loc="science">Science Behind</a>
+            <a class="nav-link" href="html/science.html" data-loc="science">Science Behind</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-loc="status">Philippine Status</a>
+            <a class="nav-link" href="html/status.html" data-loc="status">Philippine Status</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-loc="sdg">SDGs Involved</a>
+            <a class="nav-link" href="html/sdg.html" data-loc="sdg">SDGs Involved</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-loc="help">How to Help</a>
+            <a class="nav-link" href="html/orgs.html" data-loc="help">How to Help</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-loc="tree-vias">Tree-vias</a>
+            <a class="nav-link" href="html/trivia.html" data-loc="tree-vias">Tree-vias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-loc="about">About Us</a>
+            <a class="nav-link" href="html/about.html" data-loc="about">About Us</a>
           </li>
         </ul>
       </div>
@@ -146,38 +146,16 @@
       <!-- Tree-vias -->
       <div class="contain placeholder-div" id="tree-vias">
         <h1 class="sect-title">Tree-vias</h1>
-        <div class="paragraph-contain d-flex align-items-center justify-content-center dark-bg">
-          <p class="sect-sub" id="paragraph">Want to know more about trees? Click on the button to generate a fun and random fact!</p>
-        </div>
-        <button type="button" name="button" id="button" onclick="randomTrivia()" class="btn more-btn"> Generate </button>
+        <p class="sect-sub"><a>Want to know more about forests and other mind-boggling facts and trivia? This fun trivia generator will surely provide information you wouldn't have known!</a></p>
+        <a href="html/trivia.html" class="btn more-btn">Learn more</a>
       </div>
 
       <!-- About us -->
       <div class="contain placeholder-div" id="about">
-        <h1 class="sect-title"> About us </h1>
-        <div class="row justify-content-center">
-          <!-- Mors -->
-          <div class="col-3 p-5 pr-0 text-center">
-            <img src="img/mors.jpg" class="rounded-circle text-center" width="200">
-            <h2 class="abt text-center"> Marius Barcenas </h2>
-            <p class="abt"> Marius is a senior high school student currently (preposition) University of the Philippines Integrated School. He is passionate about (insert things you're passionate about).
-          </div>
-
-          <!-- Jjoe -->
-          <div class="col-3 p-5 text-center">
-            <img src="img/jjoe.jpg" class="rounded-circle text-center" width="200" >
-            <h2 class="abt text-center"> Jhanjoe Hermano </h2>
-            <p class="abt"> Jhan Conrad Rebusquillo Hermano is a senior high school student currently studying at the University of the Philippines Integrated School.  </p>
-          </div>
-
-          <!-- Jammy -->
-          <div class="col-3 p-5 pl-0 text-center">
-            <img src="img/jemi.jpg" class="rounded-circle text-center" width="200" />
-            <h2 class="abt text-center"> Jammy Mapa </h2>
-            <p class="abt"> Julia Anne Alvarado Mapa is a Grade 11 student from UP Integrated School. Her hobbies include studying, swimming, baking, and watching netflix. Her personal advocacy is for quality education to become accessible for everyone as she believes education is the key to achieving one's dreams. As for her personal dream, she wishes to one day be a chemical engineer with a specialty in pharmaceuticals or become an astronaut. </p>
-          </div>
-          
-        </div>
+        <h1 class="sect-title">About Us</h1>
+        <p class="sect-sub"><a>Know more about the team behind this project and join forces with them on their advocacy
+        </a></p>
+        <a href="html/about.html" class="btn more-btn">Learn more</a>
       </div>
     </div>
       
